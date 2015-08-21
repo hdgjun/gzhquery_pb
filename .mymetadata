@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="gzhquery_new"
+  id="myeclipse.1423445818312"
+  context-root="/gzhquery_new"
+  j2ee-spec="5.0"
+  archive="gzhquery_new.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
