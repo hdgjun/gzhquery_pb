@@ -10,10 +10,16 @@
 		
 		
 		<!-- Mysql数据库配置 	-->
- 		<property name="driverClass">com.mysql.jdbc.Driver</property>
+ 		<!-- <property name="driverClass">com.mysql.jdbc.Driver</property>
 		<property name="jdbcUrl">jdbc:mysql://192.168.1.197:3306/PokaRmbCB</property>
 		<property name="user">root</property>
-		<property name="password">123456</property> 
+		<property name="password">123456</property>  -->
+		
+		<!-- db2数据库配置 -->
+		<property name="driverClass">com.ibm.db2.jcc.DB2Driver</property>
+		<property name="jdbcUrl">jdbc:db2://192.168.1.106:50010/GZH:traceLevel=3;driverType=4;currentSchema=GZH;</property>
+		<property name="user">pokarmb</property>
+		<property name="password">123456</property>
 	
 	</default-config>
 </c3p0-config>

@@ -23,14 +23,13 @@ public class MoneyDataDaoImpl implements MoneyDataDao {
 	 * @return
 	 */
 	public String getFormatType(){
-		
 		String formatType = "";
 		if(JdbcUtil.DriverType.contains("mysql")){
 			formatType = "DATE_FORMAT(A.coltime,'%Y-%m-%d %H:%i:%S') as OperDate,";
 		}else if(JdbcUtil.DriverType.contains("oracle")){
 			formatType = "TO_CHAR(A.coltime,'YYYY-MM-DD HH24:MI:SS') as OperDate,";
-		}else{
-			
+		}else if(JdbcUtil.DriverType.contains("db2")){
+			formatType = "TO_CHAR(A.coltime,'YYYY-MM-DD HH24:MI:SS') as OperDate,";
 		}
 		return formatType;
 	}
